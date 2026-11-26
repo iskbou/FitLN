@@ -1,0 +1,25 @@
+# Raw training outputs and logs (large; results are shipped under results/)
+out/
+logs/
+runs/
+*.tar.gz
+# Python / notebooks
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+# Model checkpoints and weights
+*.pt
+*.pth
+*.safetensors
+*.bin
+# Local environments and editor files
+.venv/
+venv/
+.env
+.DS_Store
+# Shipped result tables and figures are deliberately tracked (see results/ and figures/).
+# Re-include them in case a parent or global ignore rule excludes csv/pdf files.
+!results/**/*.csv
+!results/**/*.pdf
+!figures/**/*.pdf

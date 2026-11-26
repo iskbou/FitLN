@@ -1,0 +1,109 @@
+{
+  "model": "Qwen/Qwen3.5-2B-Base",
+  "batch_size": 8,
+  "seq_len": 256,
+  "device": "cuda",
+  "dtype": "fp16",
+  "rows": [
+    {
+      "method": "fitln",
+      "regime": "inference",
+      "merged": false,
+      "trainable_params": 51200,
+      "mean_ms": 31.882903175354002,
+      "median_ms": 31.728992462158203,
+      "std_ms": 0.8993035903729438,
+      "n": 50
+    },
+    {
+      "method": "fitln",
+      "regime": "train_step",
+      "merged": false,
+      "trainable_params": 51200,
+      "mean_ms": 80.33161697387695,
+      "median_ms": 80.20934295654297,
+      "std_ms": 1.2162823252732313,
+      "n": 50
+    },
+    {
+      "method": "fullft",
+      "regime": "inference",
+      "merged": false,
+      "trainable_params": 1881825088,
+      "mean_ms": 32.01342964172363,
+      "median_ms": 32.01084899902344,
+      "std_ms": 0.9603748905256198,
+      "n": 50
+    },
+    {
+      "method": "fullft",
+      "regime": "train_step",
+      "merged": false,
+      "trainable_params": 1881825088,
+      "mean_ms": 131.13112594604493,
+      "median_ms": 131.3514862060547,
+      "std_ms": 1.0400480889237724,
+      "n": 50
+    },
+    {
+      "method": "lora1",
+      "regime": "inference",
+      "merged": false,
+      "trainable_params": 461376,
+      "mean_ms": 40.12353096008301,
+      "median_ms": 39.9051513671875,
+      "std_ms": 0.9360384023252188,
+      "n": 50
+    },
+    {
+      "method": "lora1",
+      "regime": "train_step",
+      "merged": false,
+      "trainable_params": 461376,
+      "mean_ms": 100.21286972045898,
+      "median_ms": 99.35033416748047,
+      "std_ms": 1.7661766041947466,
+      "n": 50
+    },
+    {
+      "method": "lora1",
+      "regime": "inference",
+      "merged": true,
+      "trainable_params": 461376,
+      "mean_ms": 31.690482521057127,
+      "median_ms": 30.715423583984375,
+      "std_ms": 1.5239935758459267,
+      "n": 50
+    },
+    {
+      "method": "lora8",
+      "regime": "inference",
+      "merged": false,
+      "trainable_params": 3691008,
+      "mean_ms": 41.004310302734375,
+      "median_ms": 40.601505279541016,
+      "std_ms": 2.082289785355229,
+      "n": 50
+    },
+    {
+      "method": "lora8",
+      "regime": "train_step",
+      "merged": false,
+      "trainable_params": 3691008,
+      "mean_ms": 110.96757568359375,
+      "median_ms": 111.3274917602539,
+      "std_ms": 0.8169029781711439,
+      "n": 50
+    },
+    {
+      "method": "lora8",
+      "regime": "inference",
+      "merged": true,
+      "trainable_params": 3691008,
+      "mean_ms": 35.48158340454101,
+      "median_ms": 35.55686569213867,
+      "std_ms": 0.28435168239064085,
+      "n": 50
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+model,cola,qqp,mnli,sst2,stsb,qnli,rte,mrpc,avg,source
+BERT-L,60.6,91.3,86.6,93.2,90.0,92.3,70.4,88.0,84.1,Warner et al. 2025 (GLUE dev set)
+RoBERTa-L,68.0,92.2,90.2,96.4,92.4,93.9,86.6,90.9,88.8,Warner et al. 2025 (GLUE dev set)
+DeBERTa-L,75.3,93.0,91.8,96.9,93.0,96.0,92.7,92.2,91.4,Warner et al. 2025 (GLUE dev set)
+ModernBERT-L,71.4,92.7,90.8,97.1,92.8,95.2,92.1,91.7,90.4,Warner et al. 2025 (GLUE dev set)

@@ -1,0 +1,18 @@
+# Lower bounds only, not the versions of the reported runs (pin them before release).
+# Qwen3.5 models need transformers 5.x with qwen3_5 support and Python >= 3.10.
+torch>=2.1
+transformers>=4.46
+peft>=0.12
+datasets>=2.19
+evaluate>=0.4.2
+rouge_score
+scipy
+numpy
+pandas
+matplotlib
+seaborn>=0.13
+tensorboard
+tqdm
+accelerate
+sentence-transformers>=3.0
+mteb>=2.0
